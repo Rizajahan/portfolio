@@ -13,5 +13,5 @@ export default async function handler(req, res) {
     if (error) throw error;
     await notify('New portfolio message', `${name} <${email}>\n\n${message}`);
     res.json({ ok: true });
-  } catch { res.status(500).json({ error: 'server' }); }
+  } catch (e) { console.error('CONTACT ERROR:', e); res.status(500).json({ error: 'server' }); }
 }
