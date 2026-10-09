@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & ML Solutions - Sayyed Riza Jahan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="left"><span id="r">R</span>iza</div>
+            <div class="right">
+                <ul id="navList">
+                    <i class="fa-solid fa-xmark" id="closeMenu"></i>
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#Services">Services</a></li>
+                    <li><a href="index.html#About">About</a></li>
+                    <li><a href="index.html#Project">Projects</a></li>
+                    <li><a href="index.html#portfolio">Work</a></li>
+                    <li><a href="index.html#Contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" id="openMenu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main style="max-width: 1000px; margin: 60px auto;" class="box reveal">
+    <h1 class="service-header1">AI & ML Solutions</h1>
+
+    <p class="p1">
+        I provide <strong>AI and machine learning development services</strong> focused on building practical solutions that can address real-world problems, academic requirements, and prototype ideas. From computer vision applications to interactive machine learning systems, I aim to transform data and intelligent models into useful applications that users can actually interact with.
+
+        <br>My approach begins with understanding the <strong>problem, available data, expected outcome, and project requirements</strong>. I then identify suitable machine learning techniques and technologies for the problem. My experience includes working with <strong>Python, OpenCV, TensorFlow/Keras, YOLO, Roboflow, PyTorch, TorchScript, and Streamlit</strong> to develop and integrate machine learning solutions.
+
+        <br>I focus not only on developing models but also on making them practical through <strong>application integration and user-friendly interfaces</strong>. This allows a machine learning model to become a usable application rather than remaining only as a trained model or notebook.
+    </p>
+
+    <h2>What I Offer</h2>
+    <ul>
+        <li><strong>Machine Learning Solutions:</strong> Developing practical machine learning models for classification, prediction, detection, and other project requirements.</li>
+        <li><strong>Computer Vision Applications:</strong> Building image and video-based solutions using technologies such as OpenCV and YOLO.</li>
+        <li><strong>Model Development & Integration:</strong> Preparing data, developing models, testing performance, and integrating trained models into applications.</li>
+        <li><strong>AI Application Development:</strong> Connecting machine learning models with interactive applications and user-friendly interfaces.</li>
+        <li><strong>Streamlit Applications:</strong> Creating simple and interactive web interfaces for demonstrating and using machine learning models.</li>
+        <li><strong>AI/ML Project Consultation:</strong> Helping select suitable approaches, tools, datasets, and technologies for academic and prototype-level AI/ML projects.</li>
+    </ul>
+
+    <p>Check my <a href="index.html#Project"><span id="pr">projects section</span></a> for examples of my AI and machine learning projects.</p>
+
+    <a href="index.html#Services" class="btn">← Back to Services</a>
+</main>
+
+    <div class="copyright">
+        <p>Copyright &#169; Riza. Made By Sayyed Riza Jahan.</p>
+    </div>
+
+    <script>
+        const openMenu = document.getElementById('openMenu'), closeMenu = document.getElementById('closeMenu'), navList = document.getElementById('navList');
+        openMenu.onclick = () => navList.style.right = '0';
+        closeMenu.onclick = () => navList.style.right = '-240px';
+    </script>
+    <script src="app.js" defer></script>
+</body>
+</html>

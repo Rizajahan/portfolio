@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayyed Riza Jahan</title>
+    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="theme.css">
+    <script src="https://kit.fontawesome.com/0e72ff57db.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="left"><span id="r">R</span>iza </div>
+            <i class='bx bx-menu-alt-left'></i>
+            <div class="right">
+                <ul id="side_menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Project">Projects</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="close_menu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="open_menu()"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hello, It's <span class="name">Sayyed</span><br> Riza Jahan
+                <div>
+                    I'm a
+                </div>
+                <span id="element"></span>
+                <div class="buttons">
+                <a href="https://github.com/Rizajahan" target="blank" class="btn">Github</a>
+                <a href="Sayyed_Riza_Jahan_Resume.pdf" class="btn_2" target="blank">Resume</a>
+                </div>
+            </div>
+            <div class="rightsection"><img src="riza1profile.jpg" height="450px" alt="Myimg"> </div>
+        </section>
+        <hr>
+        <!--Service page-->
+        <section class="services" id="Services">
+            <h1 class="service-header"><span class="Service_S">S</span>ervices</h1>
+            <div class="service-container">
+                <div class="box">
+                    <h1><span>Web-Development</span></h1>
+                    <p class="p1">I build modern, responsive, and functional websites tailored to personal, business, and project requirements. I focus on clean design, easy navigation, mobile responsiveness,
+                         interactive features, and reliable performance to create professional web experiences that effectively represent your brand or idea.</p>
+                    <img src="pic1.png" alt="img1">
+                    <a href="web-development.html" class="learn">Learn More</a>
+                </div>
+                <div class="box">
+                    <h1><span> Front-End development</span></h1>
+                    <p class="p1">I create responsive and interactive user interfaces using HTML, CSS, and JavaScript. I focus on clean layouts, engaging components, smooth navigation, mobile compatibility, 
+                        and user-friendly experiences that make websites visually appealing, accessible, and easy to interact with across different devices.</p>
+                    <img src="pic2.png" alt="img2">
+                  <a href="Front-EndDevelopment.html" class="learn">Learn More</a>
+                </div>
+                <div class="box">
+                    <h1><span>AI and ML Solutions</span></h1>
+                    <p class="p1">I develop practical AI and machine learning solutions for real-world problems, academic projects, and prototypes. Using technologies such as Python, OpenCV, TensorFlow, YOLO, and Streamlit,
+                         I can build intelligent applications, computer vision solutions, and interactive machine learning systems.</p>
+                    <img src="pic3.png" alt="img2">
+                  <a href="AIMLSolutions.html" class="learn">Learn More</a>
+                </div>
+                <div class="box">
+                    <h1><span>Java-Development</span></h1>
+                    <p class="p1">I develop Java applications using core Java and object-oriented programming concepts. I can create console-based applications, utility programs, academic projects,
+                         and problem-solving solutions using variables, loops, arrays, methods, classes, objects, and structured programming logic.</p>
+                    <img src="pic4.png" alt="img2">
+                    <a href="Java-Development.html" class="learn">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <!--About-->
+       <div class="about" id="About">
+    <div class="about_container">
+        <div class="about_row">
+
+            <div class="about_col1">
+                <img src="about1.jpg" alt="img">
+            </div>
+
+            <div class="about_col2">
+
+                <h1 class="about_sub">About me</h1>
+
+                <p style="text-align: justify;">
+                    Hi, I’m Riza. I’m currently pursuing my MCA in Generative AI at Amity University Noida.
+                    I enjoy working on technology and building things that are actually useful. I have worked
+                    on web development, Java, Python, Firebase, and machine learning projects. I like learning
+                    new technologies by working on projects rather than just studying the theory. I’m currently
+                    focused on improving my development skills, building better projects, and becoming more
+                    confident as a software and AI developer.
+                </p>
+
+                <div class="tab_title">
+                    <p class="tab_links active_link" onclick="open_tab('Skills')">Skills</p>
+                    <p class="tab_links" onclick="open_tab('Experience')">Experience</p>
+                    <p class="tab_links" onclick="open_tab('Education')">Education</p>
+                </div>
+
+                <!-- SKILLS -->
+                <div class="tab_contents active_content" id="Skills">
+                    <ul>
+                        <li>
+                            <span>Web Development</span><br>
+                            HTML5, CSS3, JavaScript, Responsive Web Design and Frontend Development
+                        </li>
+                        <li>
+                            <span>Programming</span><br>
+                            Java, Python, Object-Oriented Programming, Problem Solving and Basic Data Structures
+                        </li>
+                        <li>
+                            <span>AI & Machine Learning</span><br>
+                            Python, OpenCV, YOLOv5, TensorFlow/Keras, PyTorch, Roboflow, Model Training and Computer Vision
+                        </li>
+                        <li>
+                            <span>Cloud & Database</span><br>
+                            Firebase Authentication, Cloud Firestore, Firebase Hosting and Database Integration
+                        </li>
+                        <li>
+                            <span>Tools & Platforms</span><br>
+                            Git, GitHub, Visual Studio, IntelliJ IDEA, Streamlit and Google Cloud/Firebase
+                        </li>
+                    </ul>
+                </div>
+                <!-- EXPERIENCE -->
+                <div class="tab_contents" id="Experience">
+                    <ul>
+                        <li>
+                            <span>Machine Learning Intern — Mintways Technologies</span><br>
+                            2025<br>
+                            Worked on a Helmet Detection project using YOLOv5, computer vision, and machine learning techniques.
+                        </li>
+                        <li>
+                            <span>AI/ML Virtual Intern — EduSkills</span><br>
+                            Apr 2025 – Jun 2025<br>
+                            Completed a 10-week AI/ML virtual internship under the India Edu Program with exposure to machine learning concepts and practical applications.
+                        </li>
+                        <li>
+                            <span>JanLink — Cloud-Based Complaint & Scam Reporting System</span><br>
+                            Project<br>
+                            Developed a cloud-based platform using HTML, CSS, JavaScript, and Firebase to allow citizens to submit complaints, track their status, and report scams.
+                        </li>
+                        <li>
+                            <span>Mobile-Based Silent Emergency Alert & Location Sharing System</span><br>
+                            Patent Project<br>
+                            Worked on a mobile-based emergency alert and location-sharing solution designed to help users send emergency alerts with location information.
+                        </li>
+                    </ul>
+                </div>
+                <!-- EDUCATION -->
+                <div class="tab_contents" id="Education">
+                    <ul>
+                        <li>
+                            <span>MCA — Generative AI</span><br>
+                            Amity University Noida<br>
+                            2026 – Present
+                        </li>
+                        <li>
+                            <span>Bachelor of Computer Applications (BCA)</span><br>
+                            Amity University Gwalior<br>
+                            2023 – 2026<br>
+                            CGPA: 9.04
+                        </li>
+                        <li>
+                            <span>Higher Secondary Education</span><br>
+                            Rainbow Higher Secondary School<br>
+                            Percentage: 73%
+                        </li>
+                        <li>
+                            <span>Secondary Education</span><br>
+                            Rainbow Higher Secondary School<br>
+                            Percentage: 79%
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!--Project page-->
+        <div class="project" id="Project">
+            <div class="project_container">
+                <h1 class="Sub_title">My Projects</h1>
+                <div class="project_list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2><a href="HelmetDetectionByRiza.pdf" target="blank">Helmet Detection (YOLOv5)</a></h2>
+                        <p>Developed a real-time object detection system using YOLOv5 and OpenCV to identify helmet usage.
+                        Integrated with Streamlit for demo interface and exported using TorchScript for deployment efficiency.</p>
+                    </div>
+                    <div><i class="fa-solid fa-crop"></i>
+                        <h2><a href="FruitRecognitionBySayyedRiza.pdf" target="bank">Fruit Recognition</a></h2>
+                        <p>Implemented a machine learning model using Kaggle's Fruits Recognition dataset to classify
+                        different fruits. Used TensorFlow/Keras with data augmentation and visual analysis using Matplotlib.
+                        </p>
+                    </div>
+                    <div><i class="fa-brands fa-app-store"></i>
+                        <h2><a href="https://www.smartbiz.in/Rizify" target="blank">Resin Jewelry Business Website</a></h2>
+                        <p>Built a full-fledged small business website using Amazon SmallBiz tools to showcase and sell handmade resin jewelry.
+                             Focused on user experience, product branding, and maintaining a consistent aesthetic. This project highlights 
+                             my design and eCommerce skills alongside creative entrepreneurship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--portfolio-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="Sub_title">My Work</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <img src="dialcode.jpg">
+                        <div class="layer">
+                            <h3>Patent Draft Author – Emergency Safety Dial-Code System</h3>
+                            <p>Self-initiated Project | 2025<br>Drafted a complete patent proposal for a mobile-based safety alert system using emergency dial codes.
+ The system is designed to send real-time location and identity details to emergency contacts and authorities upon triggering a predefined code. 
+Included system architecture, use cases, flowcharts, and unique differentiation from existing patents.
+                            </p>
+                            <a href="Sayyed_Riza_Patent_file.pdf" target="blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="helmet.jpg">
+                        <div class="layer">
+                            <h3>Helmet-Detection System</h3>
+                            <p>Developed an AI-powered real-time helmet detection application using YOLOv5 to enhance road safety. The model identifies riders without 
+                                helmets from images, video streams, and webcam feeds, and can be integrated with license plate recognition for automated reporting.
+                                 Achieved high accuracy through custom dataset training, preprocessing, and optimization. 
+                                Deployed as both a local application and a Streamlit-based web interface for easy accessibility.
+                            </p>
+                            <a href="HelmetDetectionByRiza.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+    <img src="janLinkprofile.jpg" alt="JanLink">
+    <div class="layer">
+        <h3>JanLink - Complaint & Scam Reporting System</h3>
+        <p>
+            Developed a cloud-based complaint and scam reporting system that allows
+            citizens to submit public complaints, track their status using a unique
+            token, and report fraudulent activities. Built using HTML, CSS, JavaScript,
+            and Firebase services including Authentication, Cloud Firestore, and
+            Firebase Hosting to provide a secure and accessible platform for
+            transparent grievance management.
+        </p>
+        <a href="https://janlink-a3e84.web.app/" target="_blank">
+            <i class="fa-solid fa-link"></i>
+        </a>
+    </div>
+</div>
+                </div>
+                <!-- <a href="#" class="bttn">See More</a>-->
+            </div>
+        </div>
+        
+        <!--Contact Form-->
+        <div class="contact" id="Contact">
+            <div class="container">
+                <div class="about_row">
+                    <div class="contact_left">
+                        <h1 class="Sub_title">CONTACT ME</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>rizajahan63@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>+91 6232351769</p>
+                        <div class="social_icons">
+                            <a href="https://www.instagram.com/honeybliss_2?igsh=N2M0enJhNG9lZm02" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="http://www.linkedin.com/in/sayyed-riza-jahan-3718022b2" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://youtube.com/@honeybliss_?si=KNYGqDn469yDo_yY" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact_right">
+                        <form id="contactForm">
+                            <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+                            <input type="text" name="Name" placeholder=" Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" required maxlength="2000" placeholder="Your Message"></textarea>
+                            <button type="submit" class="bttn bttn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &#169; Riza. Made By Sayyed Riza Jahan.</p>
+            </div>
+        </div>
+
+    </main>
+    <!--typed-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Developer.', '<i>Tech</i> Student.', '<i>Video</i> Editor.'],
+            typeSpeed: 50,
+        });
+    </script> <!--Animation-->
+    <!--About page function-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab_links");
+        var tabcontents = document.getElementsByClassName("tab_contents");
+        function open_tab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active_link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active_content");
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_content");
+        }
+    </script><!--about function end-->
+    <!--For CSS for small size -->
+    <script>
+        var sidemenu = document.getElementById('side_menu');
+        function open_menu() {
+            sidemenu.style.right = "0";
+        }
+        function close_menu() {
+            sidemenu.style.right = "-240px";
+        }
+    </script>
+    <script src="app.js" defer></script>
+</body>
+
+</html>

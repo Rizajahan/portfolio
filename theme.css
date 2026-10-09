@@ -1,0 +1,110 @@
+/* ===== Wine theme — loaded AFTER final.css so it overrides it ===== */
+:root{--wine:#5b0f24;--maroon:#3d0a17;--red:#a4243b;--rose:#e0566b;--nude:#e8cfc4;--ink:#0d0306;--paper:#fff8f5;--glass:rgba(255,248,245,.06);--line:rgba(232,207,196,.18)}
+body{color:var(--nude);background:
+ radial-gradient(1100px 700px at 12% -8%,rgba(164,36,59,.55),transparent 60%),
+ radial-gradient(900px 650px at 100% 35%,rgba(91,15,36,.65),transparent 60%),
+ radial-gradient(800px 500px at 0% 100%,rgba(61,10,23,.8),transparent 60%),
+ linear-gradient(180deg,#1a060c,var(--ink) 75%);background-attachment:fixed}
+/* glossy "wine reflection" sheen that drifts slowly */
+body::before{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;
+ background:linear-gradient(115deg,transparent 42%,rgba(255,220,215,.07) 50%,transparent 58%);animation:sheen 14s ease-in-out infinite alternate}
+@keyframes sheen{from{transform:translateX(-12%)}to{transform:translateX(12%)}}
+#scrollbar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--red),var(--nude));z-index:9999}
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(13,3,6,.55);border-bottom:1px solid var(--line)}
+nav ul li a,.left{color:var(--nude)}
+nav ul li a{position:relative;transition:color .25s}
+nav ul li a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--red);transition:width .3s}
+nav ul li a:hover{font-size:1rem;color:#fff;text-decoration:none}nav ul li a:hover::after{width:100%}
+#r,.name{background:linear-gradient(135deg,var(--rose),var(--red),var(--nude));-webkit-background-clip:text;background-clip:text;color:transparent}
+.leftsection{color:var(--paper)}
+.rightsection img{border:2px solid var(--red);box-shadow:0 0 0 8px rgba(164,36,59,.15),0 20px 60px rgba(164,36,59,.35);animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px)}}
+main hr{background:linear-gradient(90deg,transparent,var(--red),transparent)}
+.leftsection .btn,.leftsection .btn_2{transition:transform .25s,box-shadow .25s,background .25s;display:inline-block}
+.leftsection .btn{background:transparent;color:var(--nude);border-color:var(--nude)}
+.leftsection .btn_2{background:linear-gradient(135deg,var(--red),var(--wine));border-color:var(--red)}
+.leftsection .btn:hover{background:var(--nude);color:var(--maroon)}
+.leftsection .btn:hover,.leftsection .btn_2:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(164,36,59,.45)}
+.services{background:none}
+.service-header,.service-header1,.about_sub,.Sub_title{color:var(--paper)}
+.Service_S{color:var(--rose)}
+.box{background:var(--glass);border:1px solid var(--line);color:var(--nude);backdrop-filter:blur(8px);transition:transform .35s,border-color .35s,box-shadow .35s}
+.box h1{color:var(--paper)}.box a{color:var(--rose)}
+.box:hover{border-color:var(--red);transform:translateY(-8px);box-shadow:0 18px 45px rgba(164,36,59,.3)}
+.box img{transition:transform .5s}.box:hover img{transform:scale(1.04)}
+.learn:hover,#pr:hover{font-size:15px;letter-spacing:.5px}
+.about{color:var(--nude)}
+.tab_links{transition:color .3s}.tab_links:hover,.tab_links.active_link{color:#fff}
+.tab_links::after{background:var(--red)}.tab_links.active_link::after{width:100%}
+.tab_contents.active_content{animation:tabIn .5s ease}
+@keyframes tabIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.tab_contents ul li{padding:10px 14px;border-left:2px solid transparent;border-radius:6px;transition:.3s}
+.tab_contents ul li:hover{background:var(--glass);border-left-color:var(--red);transform:translateX(6px)}
+.tab_contents ul li span{color:var(--rose);font-size:15px}
+.about_col1 img{box-shadow:0 20px 50px rgba(0,0,0,.5);border:1px solid var(--line)}
+.project_list div{background:linear-gradient(145deg,var(--wine),var(--maroon));border:1px solid var(--line)}
+.project_list div:hover{background:linear-gradient(145deg,var(--red),var(--wine));box-shadow:0 18px 40px rgba(164,36,59,.4)}
+.project_list a{color:var(--paper)}
+.layer{background:linear-gradient(rgba(13,3,6,.3),var(--wine))}.layer a{background:var(--paper);color:var(--wine)}
+.contact_left p i,.social_icons a{color:var(--rose)}.social_icons a:hover{color:#fff}
+.contact_left,.contact_right{color:var(--nude)}
+form input,form textarea{background:rgba(13,3,6,.7);border:1px solid var(--line);transition:border-color .3s,box-shadow .3s}
+form input:focus,form textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(164,36,59,.3)}
+form .bttn2,.bttn2{background:linear-gradient(135deg,var(--red),var(--wine));color:#fff;border:0;transition:transform .25s,box-shadow .25s}
+form .bttn2:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(164,36,59,.5)}
+.hp{position:absolute;left:-9999px;opacity:0}
+#msg{color:var(--nude);margin-top:0}
+.copyright{background:rgba(13,3,6,.8);border-top:1px solid var(--line)}
+/* scroll reveal */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+/* mobile menu slide */
+@media(max-width:600px){nav ul{top:0;right:-240px;width:220px;background:linear-gradient(180deg,var(--wine),var(--ink));box-shadow:-10px 0 40px rgba(0,0,0,.6);transition:right .45s cubic-bezier(.2,.7,.2,1)}
+ nav .fa-solid{color:var(--nude)}.firstsection{flex-direction:column;gap:30px}.firstsection>div{width:90%}.leftsection{font-size:2rem}.about,.project,#portfolio{padding:40px 20px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* ===== RizaBot ===== */
+#rbot{position:fixed;right:22px;bottom:22px;z-index:9000;font-family:Arial,sans-serif}
+.rb-fab{width:76px;height:76px;border:0;border-radius:50%;cursor:pointer;background:radial-gradient(circle at 30% 25%,var(--red),var(--wine));box-shadow:0 10px 30px rgba(164,36,59,.55);padding:6px;animation:bob 3.2s ease-in-out infinite;transition:transform .25s}
+.rb-fab:hover{transform:scale(1.1) rotate(-4deg)}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.rb-tip{position:absolute;right:86px;bottom:26px;background:var(--paper);color:var(--maroon);padding:9px 14px;border-radius:14px 14px 4px 14px;font-size:14px;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;transform:translateX(12px);transition:.4s;pointer-events:none}
+.rb-tip.show{opacity:1;transform:none}
+.robo{width:100%;height:100%;overflow:visible}
+.robo .shell{fill:var(--paper);stroke:var(--wine);stroke-width:3}.robo .face{fill:#2a0a12}
+.robo .ear,.robo .bod{fill:var(--nude);stroke:var(--wine);stroke-width:2}
+.robo .eye{fill:#fff;transform-box:fill-box;transform-origin:center;animation:blink 4.5s infinite}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.08)}}
+.robo .pupil{fill:var(--red);transition:transform .12s}
+.robo .mouth{fill:none;stroke:var(--nude);stroke-width:2.5;stroke-linecap:round;transform-box:fill-box;transform-origin:center}
+.robo .cheek{fill:#ff8fa3;opacity:0;transition:opacity .3s}
+.robo .ant{fill:var(--red);animation:glow 2s infinite}
+@keyframes glow{50%{fill:var(--nude)}}
+.robo .arm{fill:var(--nude);stroke:var(--wine);stroke-width:2;transform-box:fill-box;transform-origin:top center}
+#rbot[data-mood=happy] .cheek{opacity:.85}
+#rbot[data-mood=happy] .arm.r{animation:wave .5s 4}
+@keyframes wave{50%{transform:rotate(-35deg)}}
+#rbot[data-mood=think] .ant{animation:glow .35s infinite}
+#rbot[data-mood=think] .pupil{transform:translateY(-3px)}
+#rbot[data-mood=talk] .mouth{animation:talk .22s infinite}
+@keyframes talk{50%{transform:scaleY(2.2)}}
+.rb-panel{position:absolute;right:0;bottom:92px;width:min(370px,calc(100vw - 30px));height:min(540px,calc(100vh - 130px));display:flex;flex-direction:column;background:linear-gradient(180deg,#2a0a12,var(--ink));border:1px solid var(--line);border-radius:20px;box-shadow:0 25px 70px rgba(0,0,0,.7);overflow:hidden;transform-origin:bottom right;transform:scale(.6) translateY(30px);opacity:0;visibility:hidden;transition:.35s cubic-bezier(.2,.8,.2,1)}
+.rb-panel.open{transform:none;opacity:1;visibility:visible}
+.rb-panel header{display:flex;align-items:center;gap:12px;padding:12px 14px;background:linear-gradient(135deg,var(--wine),var(--maroon));color:#fff}
+.rb-panel header div{flex:1}.rb-panel header small{display:block;opacity:.75;font-size:12px}
+.rb-mini{width:42px;height:42px;background:var(--maroon);border-radius:50%;padding:3px}
+.rb-panel header button{background:none;border:0;color:#fff;font-size:18px;cursor:pointer}
+.rb-msgs{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}
+.rb-m{max-width:85%;padding:10px 13px;border-radius:16px;font-size:14px;line-height:1.45;white-space:pre-wrap;animation:pop .3s ease}
+@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.96)}}
+.rb-m.bot{background:rgba(255,248,245,.09);color:var(--paper);border-bottom-left-radius:4px;align-self:flex-start}
+.rb-m.me{background:linear-gradient(135deg,var(--red),var(--wine));color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.rb-dots span{display:inline-block;width:7px;height:7px;margin:0 2px;border-radius:50%;background:var(--nude);animation:dot 1s infinite}
+.rb-dots span:nth-child(2){animation-delay:.15s}.rb-dots span:nth-child(3){animation-delay:.3s}
+@keyframes dot{50%{transform:translateY(-5px);opacity:.4}}
+.rb-chips{display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 8px}
+.rb-chips button{border:1px solid var(--line);background:none;color:var(--nude);padding:6px 11px;border-radius:99px;font-size:12px;cursor:pointer;transition:.25s}
+.rb-chips button:hover{background:var(--red);color:#fff;border-color:var(--red)}
+#rbForm{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line)}
+#rbForm input{flex:1;margin:0;width:auto;font-size:14px;padding:11px 14px;border-radius:99px}
+#rbForm button{width:42px;border:0;border-radius:50%;background:var(--red);color:#fff;cursor:pointer;transition:transform .2s}#rbForm button:hover{transform:scale(1.1)}

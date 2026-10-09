@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Development - Sayyed Riza Jahan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="left"><span id="r">R</span>iza</div>
+            <div class="right">
+                <ul id="navList">
+                    <i class="fa-solid fa-xmark" id="closeMenu"></i>
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#Services">Services</a></li>
+                    <li><a href="index.html#About">About</a></li>
+                    <li><a href="index.html#Project">Projects</a></li>
+                    <li><a href="index.html#portfolio">Work</a></li>
+                    <li><a href="index.html#Contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" id="openMenu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main style="max-width: 1000px; margin: 60px auto;" class="box reveal">
+    <h1 class="service-header1">Java Development</h1>
+
+    <p class="p1">
+        I provide <strong>Java development services</strong> focused on creating structured, reliable, and maintainable applications using core Java programming and object-oriented concepts. Whether you need a programming solution, utility application, academic project, or console-based application, I can develop solutions based on your specific requirements.
+
+        <br>My approach begins with understanding the <strong>problem statement, required functionality, input/output requirements, and expected results</strong>. I then break the problem into manageable components and implement the solution using appropriate Java concepts such as variables, data types, operators, conditional statements, loops, arrays, strings, methods, classes, objects, and object-oriented programming.
+
+        <br>I focus on writing <strong>clear, organized, and understandable code</strong> while applying appropriate programming logic and problem-solving techniques. My Java development services are particularly suitable for academic projects, beginner-to-intermediate applications, programming assignments, and practical demonstrations.
+    </p>
+
+    <h2>What I Offer</h2>
+    <ul>
+        <li><strong>Core Java Development:</strong> Creating applications using fundamental Java programming concepts and structured programming techniques.</li>
+        <li><strong>Object-Oriented Programming:</strong> Implementing classes, objects, encapsulation, inheritance, polymorphism, and other OOP concepts where appropriate.</li>
+        <li><strong>Console-Based Applications:</strong> Developing interactive Java applications that accept user input, process information, and generate meaningful results.</li>
+        <li><strong>Problem Solving:</strong> Converting programming problems and requirements into logical and efficient Java solutions.</li>
+        <li><strong>Academic Java Projects:</strong> Developing practical Java projects suitable for learning, demonstrations, and academic requirements.</li>
+        <li><strong>Code Debugging & Improvement:</strong> Identifying errors, improving existing Java code, and making programs more structured, readable, and reliable.</li>
+    </ul>
+
+    <p>Check my <a href="index.html#Project"><span id="pr">projects section</span></a> for examples of my Java development projects.</p>
+
+    <a href="index.html#Services" class="btn">← Back to Services</a>
+</main>
+
+    <div class="copyright">
+        <p>Copyright &#169; Riza. Made By Sayyed Riza Jahan.</p>
+    </div>
+
+    <script>
+        const openMenu = document.getElementById('openMenu'), closeMenu = document.getElementById('closeMenu'), navList = document.getElementById('navList');
+        openMenu.onclick = () => navList.style.right = '0';
+        closeMenu.onclick = () => navList.style.right = '-240px';
+    </script>
+    <script src="app.js" defer></script>
+</body>
+</html>

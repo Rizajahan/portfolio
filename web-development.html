@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development - Sayyed Riza Jahan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="left"><span id="r">R</span>iza</div>
+            <div class="right">
+                <ul id="navList">
+                    <i class="fa-solid fa-xmark" id="closeMenu"></i>
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#Services">Services</a></li>
+                    <li><a href="index.html#About">About</a></li>
+                    <li><a href="index.html#Project">Projects</a></li>
+                    <li><a href="index.html#portfolio">Work</a></li>
+                    <li><a href="index.html#Contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" id="openMenu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main style="max-width: 1000px; margin: 60px auto;" class="box reveal">
+    <h1 class="service-header1">Web Development</h1>
+
+    <p class="p1">
+        I provide <strong>web development services</strong> focused on building complete, functional websites from the ground up — combining structure, styling, and behavior into a single working product. Whether it's a personal portfolio, a small business site, or a form-driven application connected to a real database, I handle the site end-to-end.
+
+        <br>My approach starts with understanding the <strong>purpose of the site, the content it needs to hold, and how visitors should interact with it</strong>. I then build the structure with HTML, style it to match the intended look and feel, and add the logic — in JavaScript on the front end and, where needed, small backend functions — to make it actually work: forms that save data, pages that load information live, and features that respond to what the user does.
+
+        <br>I also care about the parts that don't show on the surface: making sure input is validated, pages load fast, and the site holds up whether it's used from a laptop or a phone.
+    </p>
+
+    <h2>What I Offer</h2>
+    <ul>
+        <li><strong>Full Website Builds:</strong> Structuring and building complete websites from a blank page to a finished, working site.</li>
+        <li><strong>Database-Connected Features:</strong> Contact forms, saved submissions, and other features backed by a real database rather than static content.</li>
+        <li><strong>Responsive Layouts:</strong> Making sure the site looks and works correctly on desktop, tablet, and mobile.</li>
+        <li><strong>Interactive Elements:</strong> Menus, tabs, animations, and dynamic sections built with JavaScript.</li>
+        <li><strong>Deployment & Hosting:</strong> Getting a finished site live on the internet using free, reliable hosting.</li>
+        <li><strong>Maintenance & Fixes:</strong> Updating content, fixing bugs, and improving existing websites.</li>
+    </ul>
+
+    <p>Check my <a href="index.html#Project"><span id="pr">projects section</span></a> for examples of my web development work.</p>
+
+    <a href="index.html#Services" class="btn">← Back to Services</a>
+</main>
+
+    <div class="copyright">
+        <p>Copyright &#169; Riza. Made By Sayyed Riza Jahan.</p>
+    </div>
+
+    <script>
+        const openMenu = document.getElementById('openMenu'), closeMenu = document.getElementById('closeMenu'), navList = document.getElementById('navList');
+        openMenu.onclick = () => navList.style.right = '0';
+        closeMenu.onclick = () => navList.style.right = '-240px';
+    </script>
+    <script src="app.js" defer></script>
+</body>
+</html>

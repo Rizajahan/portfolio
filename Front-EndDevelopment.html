@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Development - Sayyed Riza Jahan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="left"><span id="r">R</span>iza</div>
+            <div class="right">
+                <ul id="navList">
+                    <i class="fa-solid fa-xmark" id="closeMenu"></i>
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#Services">Services</a></li>
+                    <li><a href="index.html#About">About</a></li>
+                    <li><a href="index.html#Project">Projects</a></li>
+                    <li><a href="index.html#portfolio">Work</a></li>
+                    <li><a href="index.html#Contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" id="openMenu"></i>
+            </div>
+        </nav>
+    </header>
+
+   <main style="max-width: 1000px; margin: 60px auto;" class="box reveal">
+    <h1 class="service-header1">Front-End Development</h1>
+
+    <p class="p1">
+        I provide <strong>front-end development services</strong> focused on creating modern, responsive, and user-friendly interfaces that provide a smooth experience across different devices. Whether you need a personal portfolio, business website, landing page, dashboard, or interactive web application, my goal is to transform your ideas and designs into functional and visually engaging web experiences.
+
+        <br>My approach begins with understanding your <strong>design requirements, target audience, content, and functionality</strong>. I then structure the interface using clean and organized code while focusing on responsiveness, usability, accessibility, and visual consistency. Using <strong>HTML, CSS, and JavaScript</strong>, I can develop interactive components, navigation systems, forms, animations, and dynamic sections that make websites engaging and easy to use.
+
+        <br>I also focus on ensuring that websites work properly across <strong>desktop, tablet, and mobile devices</strong>. Whether you are creating a website from scratch or improving an existing interface, I aim to deliver a clean, responsive, and professional frontend that represents your idea effectively.
+    </p>
+
+    <h2>What I Offer</h2>
+    <ul>
+        <li><strong>Responsive Website Interfaces:</strong> Creating layouts that adapt smoothly to different screen sizes and devices.</li>
+        <li><strong>Interactive Web Components:</strong> Developing buttons, forms, navigation menus, animations, and interactive elements using JavaScript.</li>
+        <li><strong>UI Implementation:</strong> Converting design ideas and layouts into functional web interfaces using HTML and CSS.</li>
+        <li><strong>Website Redesign:</strong> Improving existing interfaces with better layouts, styling, responsiveness, and usability.</li>
+        <li><strong>Cross-Device Compatibility:</strong> Ensuring websites provide a consistent experience across desktops, tablets, and smartphones.</li>
+        <li><strong>Frontend Bug Fixing:</strong> Identifying and resolving common HTML, CSS, and JavaScript issues affecting website functionality and appearance.</li>
+    </ul>
+
+    <p>Check my <a href="index.html#Project"><span id="pr">projects section</span></a> for examples of my front-end development work.</p>
+
+    <a href="index.html#Services" class="btn">← Back to Services</a>
+</main>
+
+    <div class="copyright">
+        <p>Copyright &#169; Riza. Made By Sayyed Riza Jahan.</p>
+    </div>
+
+    <script>
+        const openMenu = document.getElementById('openMenu'), closeMenu = document.getElementById('closeMenu'), navList = document.getElementById('navList');
+        openMenu.onclick = () => navList.style.right = '0';
+        closeMenu.onclick = () => navList.style.right = '-240px';
+    </script>
+    <script src="app.js" defer></script>
+</body>
+</html>
